@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <style>
+        body {
+            background-color: aliceblue;
+        }
+
+        h1 {
+            background-color: blue;
+            color: white;
+            text-align: center;
+            font-size: 10vw;
+        }
+        
+        p {
+            font-family: sans-serif;
+            font-size: 20px;
+            color: gray;
+        }
+
+        p b {
+            font-family: sans-serif;
+            font-size: 20px;
+            color: rgb(255, 3, 3);
+        }
+
+        p > b {
+            font-family: sans-serif;
+            font-size: 20px;
+            color: blueviolet;
+        }
+
+        #id1{
+            font-family: sans-serif;
+            font-size: 20px;
+            color:orange;
+        }
+
+        .myclass{
+            font-family: sans-serif;
+            font-size: 20px;
+            color:blue;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 id="Header"><b>Diana Zayats</b></h1>
+    </header>
+    <nav>
+        <hr>
+        <p><i>Contacts</i> - 0980314072, marusya3651@gmail.com</p>
+        <hr>
+    </nav>
+
+    <p>
+        <b>Hello </b>
+        <i>
+            <b>world!</b>
+        </i>
+    </p>
+
+    <b id="id1">Kittycat </b><br><br>
+
+    <b class="myclass">Black </b>
+    <i class="myclass">
+    <b>coffee!</b>
+    </i>
+
+    <section>
+        <h2>Education</h2>
+        <p><strong>Kyiv National University of Taras Schevchenko:</strong> since 2022 till now<br>
+            <em>Program:</em> Network and internet technologies
+        </p>
+    </section>
+    <article>
+        <h3>This is some <del> text </del><ins> new text </ins></h3>
+        <p>This is <sub>subscripted</sub> text</p>
+        <p>This is <sup>supercripted text</sup></p>
+        <p> Here is a quote from <abbr title="Internet Movie Database">IMDB</abbr> cite</p>
+        <blockquote cite="https://www.imdb.com/name/nm3053338/quotes/">
+            When you look at movies, the lead girl is always gorgeous and thin.<br>There is a stereotype that you need to look a certain way and when you get in the business you really feel the pressure.
+        </blockquote>
+        <p>Here is another quote:<q>I'm sorry my existence is not very noble or sublime.</q></p>
+        <pre>
+        I love web design and web programming
+        I love web design and web programming
+        I love web design and web programming
+        </pre>
+        <table style="border-collapse: collapse; width: 100%;">
+            <caption>Random table</caption>
+            <colgroup>
+                <col>
+            </colgroup>
+            <thead>
+                <tr>
+                    <th style="border: 1px solid black;">Title</th>
+                    <th style="border: 1px solid black;">Title 2</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="border: 1px solid black;">Some text</td>
+                    <td style="border: 1px solid black;">Some text</td>
+                </tr>
+                <tr>
+                    <td style="border: 1px solid black;">Some text</td>
+                    <td style="border: 1px solid black;">Some text</td>
+                </tr>
+                <tr>
+                    <td style="border: 1px solid black;">Some text</td>
+                    <td style="border: 1px solid black;">Рядок 3, комірка 2</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td style="border: 1px solid black;">Колонтитул 1</td>
+                    <td style="border: 1px solid black;">Колонтитул 2</td>
+                </tr>
+            </tfoot>
+        </table>
+    </article>
+    <aside>
+        <h4> Unordered list</h4>
+        <ul>
+            <li>Some text</li>
+            <li>Some text</li>
+            <li>Some text</li>
+        </ul>
+        <h4>Ordered list</h4>
+        <ol>
+            <li>Some text</li>
+            <li>Some text</li>
+            <li>Some text</li>
+        </ol>
+        <div class="My city">
+            <h2>Lviv</h2>
+        </div>
+    </aside>
+    <footer>
+        <form action="#" method="post">
+            <fieldset>
+                <legend> Person </legend>
+                Firstname: <input type="text" name="firstname"> <br>
+                Lastname: <input type="text" name="lastname"> <br>
+                Male <input type="radio" name="sex" value="male" checked>
+                Female <input type="radio" name="sex" value="female"> <br>
+                Birth date: <input type="date" id="date" name="date"> <br>
+                Subscribe to our newsletter <input type="checkbox" name="subscribe">
+                <label for="subscribe">YES</label><br>
+                <input type="submit" name="submit" value="Submit"> <br>
+            </fieldset>
+        </form>
+        <form action="#" method="get">
+            <label for="desserts">Choose a dessert</label><br>
+            <select id="desserts" name="dessert">
+                <option value="chocolate cookie" selected>Chocolate cookie</option>
+                <option value="vanilla cake" selected>Vanilla cake</option>
+                <option value="lemon sorbet" selected>Lemon sorbet</option>
+                <input type="submit" name="submit" value="Submit">
+            </select>
+        </form>
+        <h4>Some textarea</h4>
+        <form action="#">
+            <textarea name="info" rows="10" cols="30"> Crazy frog was the scariest thing in my childhood  
+            </textarea>
+            <br><br>
+            <input type="submit">
+        </form>
+        <h3> Button element</h3>
+        <button type="button" onclick="alert(Ooops)"> Go get some sleep </button>
+        <address>
+            <p>Telegram - <small>zzzayats_jpg</small></p>
+            <p>Diana Zayats</p>
+            <p>Some street</p>
+            <p>marusya3651@gmail.com</p>
+            <a href="https://github.com/DianaZayats/web-design-and-web-programming"><mark>My GitHub</mark></a>
+        </address>
+
+        <picture>
+            <source srcset="kitty-cup.jpg" media="(max-width: 600px)">
+            <source srcset="hello-kitty.jpg" media="(max-width: 1500px)">
+            <img src="kitty-cup.jpg" alt="Kitty cup">
+        </picture>
+
+    </footer>
+    <details>
+        <summary>Additional Information</summary>
+        <img src="mona-liza.jpg" alt="mona-liza" style="max-width:100%; height:auto;">
+        <p><cite>Mona Lisa</cite> by Leonardo da Vinci</p>
+    </details>
+</body>
+
+</html>
