@@ -26,6 +26,7 @@
             font-family: sans-serif;
             font-size: 20px;
             color: rgb(255, 3, 3);
+            border:1px solid green;
         }
 
         p > b {
@@ -58,10 +59,6 @@
         [type="submit"] {
             background-color: aquamarine;
             width: 100px;
-        }
-
-        p b {
-        border:1px solid green;
         }
         
         p, #id1, .myclass{
@@ -109,6 +106,7 @@
             When you look at movies, the lead girl is always gorgeous and thin.<br>There is a stereotype that you need to look a certain way and when you get in the business you really feel the pressure.
         </blockquote>
         <p>Here is another quote:<q>I'm sorry my existence is not very noble or sublime.</q></p>
+    </article>
         <pre>
         I love web design and web programming
         I love web design and web programming
@@ -146,7 +144,7 @@
                 </tr>
             </tfoot>
         </table>
-    </article>
+
     <aside>
         <h4> Unordered list</h4>
         <ul>
@@ -181,9 +179,9 @@
         <form action="#" method="get">
             <label for="desserts">Choose a dessert</label><br>
             <select id="desserts" name="dessert">
-                <option value="chocolate cookie" selected>Chocolate cookie</option>
-                <option value="vanilla cake" selected>Vanilla cake</option>
-                <option value="lemon sorbet" selected>Lemon sorbet</option>
+                <option value="chocolate cookie">Chocolate cookie</option>
+                <option value="vanilla cake">Vanilla cake</option>
+                <option value="lemon sorbet"selected>Lemon sorbet</option>
                 <input type="submit" name="submit" value="Submit">
             </select>
         </form>
@@ -208,9 +206,19 @@
             <source srcset="kitty-cup.jpg" media="(max-width: 600px)">
             <source srcset="hello-kitty.jpg" media="(max-width: 1500px)">
             <img src="kitty-cup.jpg" alt="Kitty cup">
-        </picture>
+        </picture><br><br>
 
+        <label for="moods">Choose your mood from the list:</label>
+        <input list="moods" name="mood" id="mood">
+        <datalist id="moods">
+            <option value="Happy">
+            <option value="Sad">
+            <option value="Tired">
+            <option value="Confused">
+            <option value="Exited">
+        </datalist>
     </footer>
+    
     <details>
         <summary>Additional Information</summary>
         <img src="mona-liza.jpg" alt="mona-liza" style="max-width:100%; height:auto;">
